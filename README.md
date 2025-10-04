@@ -27,7 +27,7 @@ A collection of machine learning notebooks, pretrained models, and utilities use
 This repository houses the core ML artifacts powering EduGaze’s engagement analytics. It includes:
 
 * Jupyter notebooks exploring and training models (head pose, eye gaze, attention, emotion)
-* Pretrained model weights (e.g. `mobilenetv3_emotion.pth`)
+* Pretrained model weights
 * Encodings, face-landmark models, and utilities
 * Scripts or modules for inference pipelines
 
@@ -127,11 +127,11 @@ You can wrap these in a service or endpoint (e.g. `predict`) that accepts image 
 
 ## Model Details
 
-* **Head Pose / Gaze** (Notebook: `MODEL1`, `MODEL2`)
+* **Head Pose / Gaze** 
   Includes angle estimation, attention scoring, gaze direction mapping.
 
-* **Emotion Recognition** (Notebook: `Mobile_Net_V3.ipynb`)
-  Uses a MobileNetV3 backbone fine-tuned on emotion-labeled datasets.
+* **Emotion Recognition** 
+  Uses deepface VGG face backbone fine-tuned on emotion-labeled datasets.
 
 * **Face Detection & Matching**
   Uses `face_recognition` library + dlib landmarks. The encodings are stored in `encodings.json`.
